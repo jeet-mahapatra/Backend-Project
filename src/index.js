@@ -9,7 +9,7 @@ import connectDB from "./db/index.js"
 dotenv.config({
     path: "./.env"
 })
-
+ 
 connectDB()
 .then(()=>{
     app.on("error: ",(error)=>{
@@ -18,7 +18,7 @@ connectDB()
     })
     app.listen(process.env.PORT || 8000 , ()=> {
         console.log(`Server is running at port ; ${process.env.PORT }`)
-    })
+    }) 
     
 })
 .catch((err)=>{
@@ -30,7 +30,7 @@ connectDB()
 
 
 /* 
-********------------- we add all things in single approch----------
+********------------- we add mongodb in single approch----------
 
 import express from "express"
 const app = express()
