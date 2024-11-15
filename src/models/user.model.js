@@ -28,7 +28,7 @@ const userSchema = new Schema(
     },
     avatar:{
         type:String, //cloudinary url
-        require:true
+        required:true
     },
     converImage:{
         type:String, //cloudinary url
@@ -43,7 +43,7 @@ const userSchema = new Schema(
         type:String,
         required:[true, "Password is required"]
     },
-    refressToken:{
+    refreshToken:{
         type: String
     }   
 
